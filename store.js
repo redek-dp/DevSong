@@ -31,28 +31,29 @@ export async function getSongs() {
     },
     {
       type: 'url',
-      id: 'https://archive.org/serve/DWK382/Noi2er_-_01_-_Opening.mp3',
-      title: 'Opening',
-      artist: 'Noi2er',
-      album: 'Beyond Reality (Vacuum) (LP)',
-      duration: '03:34',
+      id: 'https://drive.google.com/uc?export=download&id=1FW3WRK_f3vl5lQtrjveCOGz1obwPMN70',
+      title: 'Cilene Benichio Jonas Benihio Vol.02',
+      artist: 'Cilene Benichio Jonas Benihio',
+      album: 'Benichio-vol1',
+      duration: '60:34',
       dateAdded: Date.now()
     },
     {
       type: 'url',
-      id: 'https://archive.org/download/DWK382/Noi2er_-_06_-_Aloe-Almond_Butter_And_Space_Pesto.mp3',
-      title: 'Aloe-Almond Butter And Space Pesto',
-      artist: 'Noi2er',
-      album: 'Beyond Reality (Vacuum) (LP)',
-      duration: '01:29',
+      id: 'https://drive.google.com/uc?export=download&id=1NISA2h1s0rjTVYS8pvowlI8If5HaCN2F',
+      title: 'Hinos Ccb Orquestra Hymns',
+      artist: 'Orquestra Hymns',
+      album: 'OrquestraHymns',
+      duration: '70:29',
       dateAdded: Date.now()
     }];
 
     await set('pwamp-songs', songs);
 
     // And store the artwork for those songs.
-    await setArtwork('Benichio', 'Beyond Reality (Vacuum) (LP)', 'https://raw.githubusercontent.com/redek-dp/DevSong/main/songs/capajb.jpg');
-    await setArtwork('Hinos-Taboado-Sorocaba', 'Davrous Universe', 'https://raw.githubusercontent.com/redek-dp/DevSong/main/songs/TaboadoSorocaba.jpg');
+    await setArtwork('Benichio', 'Benichio-vol1', 'https://redek-dp.github.io/DevSong/songs/capajb.jpg');
+    await setArtwork('Hinos-Taboado-Sorocaba', 'https://redek-dp.github.io/DevSong/songs/TaboadoSorocaba.jpg');
+    await setArtwork('OrquestraHymns', 'https://redek-dp.github.io/DevSong/songs/OrquestraHymns.jpeg');
   }
 
   // Verify that all songs have the new dateAdded field,
