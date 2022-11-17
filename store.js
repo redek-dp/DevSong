@@ -15,7 +15,7 @@ export async function getSongs() {
       type: 'url',
       id: 'https://drive.google.com/uc?export=download&id=12hwquYXXl1skLSOc5GLiA7NH1b6YeZls',
       title: 'Hinos Ccb Cantados Vol 1',
-      artist: 'Samuka Duarte Jonas-Benichio',
+      artist: 'Jonas-Benichio',
       album: 'Benichio',
       duration: '50:40',
       dateAdded: Date.now()
@@ -33,7 +33,7 @@ export async function getSongs() {
       type: 'url',
       id: 'https://drive.google.com/uc?export=download&id=1FW3WRK_f3vl5lQtrjveCOGz1obwPMN70',
       title: 'Cilene Benichio Jonas Benihio Vol.02',
-      artist: 'Cilene Benichio Jonas Benihio',
+      artist: 'Jonas-Benichio',
       album: 'Benichio-vol1',
       duration: '60:34',
       dateAdded: Date.now()
