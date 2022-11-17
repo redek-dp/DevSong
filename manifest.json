@@ -1,8 +1,8 @@
 {
-  "name": "PWAmp music player",
-  "short_name": "PWAmp",
-  "description": "A skinable music player app to play your favorite mp3 files",
-  "lang": "en-US",
+  "name": "DevSong",
+  "short_name": "DevSong",
+  "description": "A skinable music player DevSong mp3 files",
+  "lang": "pt-br",
   "start_url": "./",
   "scope": "./",
   "theme_color": "#181c25",
@@ -38,18 +38,18 @@
       "src": "./screenshot-playlist.png",
       "sizes": "1280x720",
       "platform": "wide",
-      "label": "The main PWAmp user interface, showing a list of songs, and playback buttons."
+      "label": "The main DevSong user interface, showing a list of songs, and playback buttons."
     },
     {
       "src": "./screenshot-visualizer.png",
       "sizes": "1280x720",
       "platform": "wide",
-      "label": "The PWAmp visualizer, showing the current song, the playback buttons, and a colorful visualization of the current song."
+      "label": "The DevSong visualizer, showing the current song, the playback buttons, and a colorful visualization of the current song."
     },
     {
       "src": "./screenshot-widget.png",
       "sizes": "600x400",
-      "label": "The PWAmp mini-player widget"
+      "label": "The DevSong mini-player widget"
     }
   ],
   "file_handlers": [
@@ -126,10 +126,10 @@
   },
   "widgets": [
     {
-      "name": "PWAmp mini player",
-      "short_name": "PWAmp",
-      "description": "Widget to control the PWAmp player",
-      "tag": "pwamp",
+      "name": "DevSong",
+      "short_name": "DevSong",
+      "description": "Widget to control the DevSong player",
+      "tag": "DevSong",
       "template": "test",
       "ms_ac_template": "widgets/mini-player.json",
       "data": "widgets/mini-player-data.json",
@@ -138,7 +138,7 @@
         {
           "src": "./screenshot-widget.png",
           "sizes": "600x400",
-          "label": "The PWAmp mini-player widget"
+          "label": "The DevSong mini-player widget"
         }
       ],
       "icons": [
