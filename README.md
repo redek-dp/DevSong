@@ -1,5 +1,7 @@
-# PWAmp app demo
+# DevSong
 
-➡️ **[Open the demo](https://redek-dp.github.io/DevSong/)** ⬅️
+➡️➡️ **[DevSong](https://redek-dp.github.io/DevSong/)** ⬅️
+
+➡️➡️ **[Editor](https://github.dev/redek-dp/DevSong/)**
 
 
