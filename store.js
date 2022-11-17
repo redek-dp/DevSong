@@ -3,19 +3,6 @@ import { getUniqueId } from './utils.js';
 
 export let wasStoreEmpty = false;
 
-// Songs are stored in IDB as an array under the 'songs' key.
-//
-// Songs have unique IDs to identify them. Songs also have a title, artist, album, and duration.
-// We do not read this information from the song file itself, this is stored in IDB too.
-// 
-// There are 2 types of songs: remote and file.
-// A remote song is one that has a URL to a remote audio file. A remote song's ID is its URL.
-// A file song is one that was loaded as a file from disk and stored in IDB. A file song's ID
-// is a unique ID generated when importing the file.
-
-/**
- * Get the list of all songs stored in IDB.
- */
 export async function getSongs() {
   let songs = await get('pwamp-songs');
 
@@ -27,19 +14,19 @@ export async function getSongs() {
     songs = [{
       type: 'url',
       id: 'https://drive.google.com/uc?export=download&id=12hwquYXXl1skLSOc5GLiA7NH1b6YeZls',
-      title: 'Hinos ccb cantados vl 1',
+      title: 'Hinos Ccb Cantados Vol 1',
       artist: 'Samuka Duarte Jonas-Benichio',
       album: 'Benichio',
-      duration: '03:40',
+      duration: '50:40',
       dateAdded: Date.now()
     },
     {
       type: 'url',
-      id: 'https://microsoftedge.github.io/Demos/pwamp/songs/OverTheStargates.mp3',
-      title: 'Over The Stargates',
-      artist: 'David Rousset',
-      album: 'Davrous Universe',
-      duration: '01:40',
+      id: 'https://drive.google.com/uc?export=download&id=17FxLzCT7lCR8luhHxiPxbZA2Ue-DNFYt',
+      title: 'Coletânea 1 de Hinos Taboado e Sorocaba',
+      artist: 'Taboado e Sorocaba',
+      album: 'Hinos-Taboado-Sorocaba',
+      duration: '50:40',
       dateAdded: Date.now()
     },
     {
@@ -64,8 +51,8 @@ export async function getSongs() {
     await set('pwamp-songs', songs);
 
     // And store the artwork for those songs.
-    await setArtwork('Benichio', 'Beyond Reality (Vacuum) (LP)', 'https://hinarioccb.web.app/dev/d-framework/icon/512.png');
-    await setArtwork('David Rousset', 'Davrous Universe', 'https://microsoftedge.github.io/Demos/pwamp/songs/Reunion.jpg');
+    await setArtwork('Benichio', 'Beyond Reality (Vacuum) (LP)', 'https://raw.githubusercontent.com/redek-dp/DevSong/main/songs/capajb.jpg');
+    await setArtwork('Hinos-Taboado-Sorocaba', 'Davrous Universe', 'https://raw.githubusercontent.com/redek-dp/DevSong/main/songs/TaboadoSorocaba.jpg');
   }
 
   // Verify that all songs have the new dateAdded field,
