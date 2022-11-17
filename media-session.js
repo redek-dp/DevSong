@@ -17,7 +17,7 @@ export function initMediaSession(player) {
   async function updateMediaSessionMetadata() {
     const artworkUrl = player.song.artworkUrl
     ? await getImageAsDataURI(player.song.artworkUrl)
-    : 'https://microsoftedge.github.io/Demos/pwamp/album-art-placeholder.png';
+    : 'https://redek-dp.github.io/DevSong/album-art-placeholder.png';
 
     const artwork = {
       src: artworkUrl,
