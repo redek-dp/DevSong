@@ -53,7 +53,7 @@ export async function getSongs() {
     // And store the artwork for those songs.
     await setArtwork('Benichio', 'Benichio-vol1', 'https://redek-dp.github.io/DevSong/songs/capajb.jpg');
     await setArtwork('Hinos-Taboado-Sorocaba', 'https://redek-dp.github.io/DevSong/songs/TaboadoSorocaba.jpg');
-    await setArtwork('OrquestraHymns', 'https://redek-dp.github.io/DevSong/songs/OrquestraHymns.jpeg');
+    await setArtwork('OrquestraHymns', 'https://redek-dp.github.io/DevSong/songs/OrquestraHymns.jpg');
   }
 
   // Verify that all songs have the new dateAdded field,
