@@ -236,7 +236,7 @@ body {
 
 .playlist-song {
   padding: .75rem 0;
-  border-radius: 1rem;
+  /*border-radius: 1rem;*/
   width: max-content;
   margin: 0 auto;
   display: grid;
