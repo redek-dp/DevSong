@@ -40,6 +40,15 @@ export async function getSongs() {
     },
     {
       type: 'url',
+      id: 'https://drive.google.com/uc?export=download&id=12qkgpqcXBvRQE2NV8yqSVU2Soix6khCt',
+      title: 'Hinos CCB Voz e Piano',
+      artist: 'CCB Voz Orquestra Hymns',
+      album: 'OrquestraHymns',
+      duration: '60:34',
+      dateAdded: Date.now()
+    },
+    {
+      type: 'url',
       id: 'https://drive.google.com/uc?export=download&id=1NISA2h1s0rjTVYS8pvowlI8If5HaCN2F',
       title: 'Hinos Ccb Orquestra Hymns',
       artist: 'Orquestra Hymns',
