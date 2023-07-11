@@ -33,7 +33,13 @@ export function createSongUI(playlistSongsContainer, song, stateLess) {
   titleInput.setAttribute('title', 'Song title - click to edit');
   titleInput.textContent = song.title;
   if (!stateLess) {
-    titleInput.setAttribute('contenteditable', true);
+
+
+    //titleInput.setAttribute('contenteditable', true);
+
+
+
+    titleInput.setAttribute('contenteditable', false);
     titleInput.setAttribute('spellcheck', false);
   }
   li.appendChild(titleInput);
@@ -44,7 +50,7 @@ export function createSongUI(playlistSongsContainer, song, stateLess) {
   artistInput.setAttribute('title', 'Artist - click to edit');
   artistInput.textContent = song.artist;
   if (!stateLess) {
-    artistInput.setAttribute('contenteditable', true);
+    artistInput.setAttribute('contenteditable', false);
     artistInput.setAttribute('spellcheck', false);
   }
   li.appendChild(artistInput);
@@ -55,7 +61,7 @@ export function createSongUI(playlistSongsContainer, song, stateLess) {
   albumInput.setAttribute('title', 'Album - click to edit');
   albumInput.textContent = song.album;
   if (!stateLess) {
-    albumInput.setAttribute('contenteditable', true);
+    albumInput.setAttribute('contenteditable', false);
     albumInput.setAttribute('spellcheck', false);
   }
   li.appendChild(albumInput);
