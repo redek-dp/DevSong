@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DevSong</title>
-  <link rel="icon" href="favicon.ico" sizes="any" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="d-framework/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#181c25" />
-  <link rel="stylesheet" href="about.css" />
-  <link rel="stylesheet" href="skins/default.css" id="default-stylesheet" />
+  <link rel="stylesheet" href="d-framework/about.css" />
+  <link rel="stylesheet" href="d-framework/skins/default.css" id="default-stylesheet" />
   <script src="https://redek-dp.github.io/analytics-star/v1/hinariobook.id.js"></script>
 </head>
 
@@ -27,18 +26,17 @@
 
   <section class="player">
     <div class="player-controls">
-
       <button class="player-control-button main-button" id="previous"
-        title="Ir para a música anterior ou o início da música">
-        <span>Anterior</span>
+        title="Go to the previous song or the beginning of song (P)">
+        <span>Previous</span>
       </button>
-      <button class="player-control-button main-button" id="playpause" title="Play">
+      <button class="player-control-button main-button" id="playpause" title="Play (space)">
         <span>Play</span>
       </button>
-      <button class="player-control-button main-button" id="next" title="Go to the next song">
+      <button class="player-control-button main-button" id="next" title="Go to the next song (N)">
         <span>Next</span>
       </button>
-      <button class="main-button" id="toggle-visualizer" title="Show visualizer">
+      <button class="main-button" id="toggle-visualizer" title="Show visualizer (V)">
         <span>Show visualizer</span>
       </button>
     </div>
@@ -65,16 +63,17 @@
   </section>
 
   <section class="app-controls">
-    <button class="main-button" id="add-songs" title="Adicionar novas músicas à lista de reprodução">
+    <button class="main-button" id="add-songs" title="Add new songs to the playlist">
       <span>Add new songs</span>
     </button>
     <button class="main-button" id="load-custom-skin" title="Aplicar uma capa personalizada">
       <span>Aplicar uma capa personalizada</span>
     </button>
-    <button class="main-button" id="record-audio" title="Grave um clipe de áudio">
-      <span>Grave um clipe de áudio</span>
+    <button class="main-button" id="record-audio" title="Grave um clipe de audio">
+      <span>Grave um clipe de audio</span>
     </button>
-    <button class="main-button" id="playlist-actions" title="Mais ferramentas...">
+    <button class="main-button" id="playlist-actions" popovertarget="playlist-actions-popover"
+      popovertargetaction="toggle" title="Mais ferramentas...">
       <span>Mais ferramentas...</span>
     </button>
   </section>
@@ -82,9 +81,8 @@
   <canvas id="waveform"></canvas>
 
   <div id="song-actions-popover" popover>
-
     <button class="popover-item song-action" id="song-action-copy-uri">
-      Link de cópia
+      Link de copia
     </button>
     <button class="popover-item song-action" id="song-action-export">
       Exportar...
@@ -92,7 +90,6 @@
     <button class="popover-item song-action" id="song-action-share">
       Compartilhar...
     </button>
-
     <button class="popover-item song-action" id="song-action-delete">
       Excluir
     </button>
@@ -103,7 +100,7 @@
       Classificar por artista
     </button>
     <button class="popover-item playlist-action" id="playlist-action-sortbyalbum">
-      Classificar por álbum
+      Classificar por album
     </button>
     <button class="popover-item playlist-action" id="playlist-action-sortbydateadded">
       Ordenar pelos mais recentes
@@ -111,11 +108,9 @@
     <button class="popover-item playlist-action" id="playlist-action-delete">
       Excluir tudo
     </button>
-   
     <button class="popover-item playlist-action" id="playlist-action-export">
       Exportar tudo...
     </button>
-
     <button class="popover-item playlist-action" id="playlist-action-about">
       Sobre...
     </button>
@@ -123,7 +118,7 @@
 
   <dialog id="about-dialog">
     <div class="screenshot"></div>
-    <img class="logo" src="./favicon-128.png" alt="The logo" />
+    <img class="logo" src="./d-framework/favicon-128.png" alt="DevSong logo" />
     <section class="about">
       <h1>DevSong</h1>
       <h2>O Web Amp Progressivo</h2>
@@ -143,12 +138,12 @@
     </form>
   </dialog>
 
-  <script src="popup-polyfill.js"></script>
+  <script src="d-framework/popover.min.js"></script>
 
-  <script type="module" src="app.js"></script>
-  <script type="module" src="file-launch-handler.js"></script>
-  <script type="module" src="protocol-launch-handler.js"></script>
-  <script type="module" src="share-target-launch-handler.js"></script>
+  <script type="module" src="d-framework/app.js"></script>
+  <script type="module" src="d-framework/file-launch-handler.js"></script>
+  <script type="module" src="d-framework/protocol-launch-handler.js"></script>
+  <script type="module" src="d-framework/share-target-launch-handler.js"></script>
 
   <script>
     if ("serviceWorker" in navigator) {

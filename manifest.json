@@ -11,43 +11,46 @@
   "display_override": [
     "window-controls-overlay"
   ],
+  "edge_side_panel": {
+    "preferred_width": 496
+  },
   "icons": [
     {
-      "src": "./favicon-48.png",
+      "src": "./d-framework/favicon-48.png",
       "sizes": "48x48"
     },
     {
-      "src": "./favicon-96.png",
+      "src": "./d-framework/favicon-96.png",
       "sizes": "96x96"
     },
     {
-      "src": "./favicon-128.png",
+      "src": "./d-framework/favicon-128.png",
       "sizes": "128x128"
     },
     {
-      "src": "./favicon-256.png",
+      "src": "./d-framework/favicon-256.png",
       "sizes": "256x256"
     },
     {
-      "src": "./favicon-512.png",
+      "src": "./d-framework/favicon-512.png",
       "sizes": "512x512"
     }
   ],
   "screenshots": [
     {
-      "src": "./screenshot-playlist.png",
+      "src": "./d-framework/screenshot-playlist.png",
       "sizes": "1280x720",
       "platform": "wide",
       "label": "The main DevSong user interface, showing a list of songs, and playback buttons."
     },
     {
-      "src": "./screenshot-visualizer.png",
+      "src": "./d-framework/screenshot-visualizer.png",
       "sizes": "1280x720",
       "platform": "wide",
       "label": "The DevSong visualizer, showing the current song, the playback buttons, and a colorful visualization of the current song."
     },
     {
-      "src": "./screenshot-widget.png",
+      "src": "./d-framework/screenshot-widget.png",
       "sizes": "600x400",
       "label": "The DevSong mini-player widget"
     }
@@ -130,51 +133,41 @@
       "short_name": "DevSong",
       "description": "Widget to control the DevSong player",
       "tag": "DevSong",
-      "template": "test",
-      "ms_ac_template": "widgets/mini-player.json",
-      "data": "widgets/mini-player-data.json",
-      "type": "application/json",
+      "ms_ac_template": "d-framework/widgets/mini-player.json",
+      "data": "d-framework/widgets/mini-player-data.json",
       "screenshots": [
         {
-          "src": "./screenshot-widget.png",
+          "src": "./d-framework/screenshot-widget.png",
           "sizes": "600x400",
           "label": "The DevSong mini-player widget"
         }
       ],
       "icons": [
         {
-          "src": "./favicon-48.png",
+          "src": "./d-framework/favicon-48.png",
           "sizes": "48x48"
         },
         {
-          "src": "./favicon-96.png",
+          "src": "./d-framework/favicon-96.png",
           "sizes": "96x96"
         },
         {
-          "src": "./favicon-128.png",
+          "src": "./d-framework/favicon-128.png",
           "sizes": "128x128"
         },
         {
-          "src": "./favicon-256.png",
+          "src": "./d-framework/favicon-256.png",
           "sizes": "256x256"
         },
         {
-          "src": "./favicon-512.png",
+          "src": "./d-framework/favicon-512.png",
           "sizes": "512x512"
         }
       ],
       "backgrounds": [
         {
-          "src": "./widgets/background.png",
+          "src": "./d-framework/widgets/background.png",
           "sizes": "600x400"
-        }
-      ],
-      "auth": false,
-      "update": 100,
-      "actions": [
-        {
-          "action": "buttonClick",
-          "title": "Button Click"
         }
       ]
     }

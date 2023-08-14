@@ -7,6 +7,13 @@
   --primary: #ffbb50;
 }
 
+@media (forced-colors: active) {
+  button {
+    background-color: CanvasText !important;
+    --primary: Canvas;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -19,6 +26,12 @@ html {
 @media (max-width: 600px) {
   html {
     font-size: 12pt;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 11pt;
   }
 }
 
@@ -83,7 +96,7 @@ body {
   place-content: center;
 }
 
-.main-button span {
+button span {
   color: transparent;
   display: block;
   overflow: hidden;
@@ -134,6 +147,13 @@ body {
 
   /* Hide the central part between the 2 bars */
   transition: all 0.3s;
+}
+
+@media (forced-colors: active) {
+  .player-controls #playpause span  {
+    --primary: CanvasText;
+    --text: Canvas;
+  }
 }
 
 .player-controls #playpause.playing span {
@@ -247,6 +267,12 @@ body {
   transition: background-color .1s linear;
 }
 
+@media (max-width: 400px) {
+  .playlist-song {
+    padding: .5rem 0;
+  }
+}
+
 .playlist-song:nth-child(2n) {
   background: #ffffff04;
 }
@@ -271,6 +297,12 @@ body {
 .playlist-song.playing {
   background-color: var(--primary);
   color: var(--back);
+}
+
+@media (forced-colors: active) {
+  .playlist-song.playing {
+    background-color: Highlight;
+  }
 }
 
 .playlist-song .artist {
@@ -322,6 +354,18 @@ html:not(.visualizing) .playlist-song.playing .artist {
   border-left-color: var(--back);
 }
 
+@media (forced-colors: active) {
+  .playlist-song .play {
+    border-color: Canvas !important;
+    border-left-color: CanvasText !important;
+  }
+  
+  .playlist-song.playing .play {
+    border-color: Highlight !important;
+    border-left-color: CanvasText !important;
+  }
+}
+
 .playlist-song .play:hover,
 .playlist-song.playing .play {
   border-left-color: var(--text);
@@ -348,8 +392,16 @@ html:not(.visualizing) .playlist-song.playing .artist {
   font-size: 0;
   place-self: center;
   display: grid;
-  align-content: end;
+  align-content: center;
   cursor: pointer;
+}
+
+@media (forced-colors: active) {
+  .playlist-song .actions {
+    background: Canvas !important;
+    /* --text: CanvasText !important;
+    --primary: CanvasText !important; */
+  }
 }
 
 .playlist-song .actions::before {
@@ -550,6 +602,12 @@ html:not(.visualizing) .playlist-song.playing .artist {
   text-align: left;
 }
 
+@media (forced-colors: active) {
+  input[type="range"] {
+    --secondary: CanvasText;
+  }
+}
+
 input[type="range"] {
   -webkit-appearance: none;
   background: none;
@@ -607,6 +665,15 @@ input[type="range"]::-moz-range-thumb {
   top: -.25rem;
 }
 
+@media (forced-colors: active) {
+  input[type="range"]::-webkit-slider-thumb {
+    border: 1px solid;
+  }
+  input[type="range"]::-moz-range-thumb {
+    border: 1px solid;
+  }
+}
+
 input[type="range"]:active::-webkit-slider-thumb,
 input[type="range"]:hover::-webkit-slider-thumb {
   background: var(--text);
@@ -658,7 +725,7 @@ input[type="range"]:hover::-moz-range-thumb {
 
 .playlist {
   height: 100%;
-  /*width: max-content;*/
+  width: max-content;
   overflow-y: auto;
   display: grid;
   place-items: center;
@@ -669,6 +736,7 @@ input[type="range"]:hover::-moz-range-thumb {
 @media (max-width: 600px) {
   .playlist {
     padding-inline: .5rem;
+    width: unset;
   } 
 }
 
@@ -757,16 +825,17 @@ input[type="range"]:hover::-moz-range-thumb {
   box-shadow: 0 0 .5rem 0 #0006;
 }
 
-html:not(.no-popup) [popover]:not(:open) {
+[popover]:not(:popover-open) {
   pointer-events: none;
   opacity: 0;
 }
 
-/* This rule is only used in browsers that don't support popover
-   See popup-polyfill.js */
-[popover][hidden] {
-  pointer-events: none;
-  opacity: 0;
+/* Duplicated rule needed when the polyfill is used */
+@supports not selector([popover]:popover-open) {
+  [popover]:not(.\:popover-open) {
+    pointer-events: none;
+    opacity: 0;
+  }
 }
 
 .popover-item {

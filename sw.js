@@ -1,36 +1,37 @@
-const VERSION = "v35";
-const CACHE_NAME = `pwamp-${VERSION}`;
+const VERSION = "v41";
+const CACHE_NAME = `DevSong-${VERSION}`;
 
 // Those are all the resources our app needs to work.
 // We'll cache them on install.
 const INITIAL_CACHED_RESOURCES = [
   "./",
   "./index.html",
-  "./skins/default.css",
-  "./about.css",
-  "./album-art-placeholder.png",
-  "./app.js",
-  "./audio-metadata-parse-worker.js",
-  "./exporter.js",
-  "./file-launch-handler.js",
-  "./importer.js",
-  "./index.html",
-  "./media-session.js",
-  "./parseAudioMetadata.js",
-  "./player.js",
-  "./popup-polyfill.js",
-  "./protocol-launch-handler.js",
-  "./recorder.js",
-  "./share-target-launch-handler.js",
-  "./skin.js",
-  "./song-ui-factory.js",
-  "./store.js",
-  "./utils.js",
-  "./visualizer.js",
-  "./visualizer.png",
-  "./widgets/mini-player.json",
-  "./widgets/mini-player-data.json",
-  "https://cdn.jsdelivr.net/npm/idb-keyval@6/+esm"
+  "./d-framework/skins/default.css",
+  "./d-framework/about.css",
+  "./d-framework/album-art-placeholder.png",
+  "./d-framework/app.js",
+  "./d-framework/audio-metadata-parse-worker.js",
+  "./d-framework/exporter.js",
+  "./d-framework/file-launch-handler.js",
+  "./d-framework/importer.js",
+  "./manifest.json",
+  "./d-framework/keys.js",
+  "./d-framework/media-session.js",
+  "./d-framework/parseAudioMetadata.js",
+  "./d-framework/player.js",
+  "./d-framework/popover.min.js",
+  "./d-framework/protocol-launch-handler.js",
+  "./d-framework/recorder.js",
+  "./d-framework/share-target-launch-handler.js",
+  "./d-framework/skin.js",
+  "./d-framework/song-ui-factory.js",
+  "./d-framework/store.js",
+  "./d-framework/utils.js",
+  "./d-framework/visualizer.js",
+  "./d-framework/visualizer.png",
+  "./d-framework/widgets/mini-player.json",
+  "./d-framework/widgets/mini-player-data.json",
+  "./d-framework/idb-keyval.js"
 ];
 
 // Add a cache-busting query string to the pre-cached resources.

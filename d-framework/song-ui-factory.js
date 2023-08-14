@@ -33,16 +33,12 @@ export function createSongUI(playlistSongsContainer, song, stateLess) {
   titleInput.setAttribute('title', 'Song title - click to edit');
   titleInput.textContent = song.title;
   if (!stateLess) {
-
-
-    //titleInput.setAttribute('contenteditable', true);
-
-
-
     titleInput.setAttribute('contenteditable', false);
     titleInput.setAttribute('spellcheck', false);
   }
   li.appendChild(titleInput);
+
+
 
   // Artist name
   const artistInput = document.createElement("span");
@@ -77,6 +73,8 @@ export function createSongUI(playlistSongsContainer, song, stateLess) {
     const actionsButton = document.createElement("button");
     actionsButton.classList.add('actions');
     actionsButton.setAttribute('title', 'Song actions');
+    actionsButton.setAttribute('popovertarget', 'song-actions-popover');
+    actionsButton.setAttribute('popovertargetaction', 'show');
     actionsButton.innerHTML = '<span>Actions</span>';
     li.appendChild(actionsButton);
 
