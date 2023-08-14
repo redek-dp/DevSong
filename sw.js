@@ -1,5 +1,5 @@
 const VERSION = "v41";
-const CACHE_NAME = `DevSong-${VERSION}`;
+const CACHE_NAME = `pwamp-${VERSION}`;
 
 // Those are all the resources our app needs to work.
 // We'll cache them on install.
