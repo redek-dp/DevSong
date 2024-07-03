@@ -26,10 +26,10 @@ export async function getSongs() {
     // Add a couple of songs to get started so the app isn't empty.
     songs = [{
       type: 'url',
-      id: 'https://bookhccb.pages.dev/arquivos/1.mp3',
-      title: 'Hinos Ccb Cantados',
+      id: 'https://cloud1.cdnseguro.com:2136/,.mp3',
+      title: 'Radio DecomStudio',
       artist: 'DevSong',
-      album: 'Benichio',
+      album: 'Decom tv',
       duration: '4:15',
       dateAdded: Date.now()
     },
