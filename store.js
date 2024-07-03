@@ -17,7 +17,7 @@ export async function getSongs() {
       title: 'Hinos Ccb Cantados Vol 1',
       artist: 'Jona',
       album: 'Benichio',
-      duration: '50:40',
+      duration: '2:40',
       dateAdded: Date.now()
     },
     {
