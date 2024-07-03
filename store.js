@@ -35,7 +35,7 @@ export async function getSongs() {
     },
     {
       type: 'url',
-      id: 'https://drive.google.com/uc?export=download&id=17FxLzCT7lCR8luhHxiPxbZA2Ue-DNFYt',
+      id: 'https://bookhccb.pages.dev/arquivos/2.mp3',
       title: 'Coletânea 1 de Hinos Taboado e Sorocaba',
       artist: 'DevSong Taboado e Sorocaba',
       album: 'Hinos-Taboado-Sorocaba',
