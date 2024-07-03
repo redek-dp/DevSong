@@ -13,7 +13,7 @@ export async function getSongs() {
     // Add a couple of songs to get started so the app isn't empty.
     songs = [{
       type: 'url',
-      id: 'https://drive.google.com/uc?export=download&id=12hwquYXXl1skLSOc5GLiA7NH1b6YeZls',
+      id: 'https://bookhccb.pages.dev/arquivos/3.mp3',
       title: 'Hinos Ccb Cantados Vol 1',
       artist: 'Jonas-Benichio',
       album: 'Benichio',
