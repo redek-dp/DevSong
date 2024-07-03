@@ -32,7 +32,7 @@ export async function getSongs() {
     {
       type: 'url',
       id: 'https://bookhccb.pages.dev/arquivos/4.mp3',
-      title: 'Hinos Ccb Cantados',
+      title: 'Hinos Ccb Cantado',
       artist: 'Jonas-Benichio',
       album: 'Benichio-vol1',
       duration: '60:34',
