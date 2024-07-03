@@ -23,7 +23,7 @@ export async function getSongs() {
     {
       type: 'url',
       id: 'https://bookhccb.pages.dev/arquivos/3.mp3',
-      title: 'Coletânea 1 de Hinos Taboado e Sorocaba',
+      title: 'Hinos Ccb Cantados',
       artist: 'Taboado e Sorocaba',
       album: 'Hinos-Taboado-Sorocaba',
       duration: '50:40',
@@ -32,7 +32,7 @@ export async function getSongs() {
     {
       type: 'url',
       id: 'https://bookhccb.pages.dev/arquivos/4.mp3',
-      title: 'Cilene Benichio Jonas Benihio Vol.02',
+      title: 'Hinos Ccb Cantados',
       artist: 'Jonas-Benichio',
       album: 'Benichio-vol1',
       duration: '60:34',
