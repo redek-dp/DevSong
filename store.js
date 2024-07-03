@@ -22,7 +22,7 @@ export async function getSongs() {
     },
     {
       type: 'url',
-      id: 'https://drive.google.com/uc?export=download&id=17FxLzCT7lCR8luhHxiPxbZA2Ue-DNFYt',
+      id: 'https://bookhccb.pages.dev/arquivos/3.mp3',
       title: 'Coletânea 1 de Hinos Taboado e Sorocaba',
       artist: 'Taboado e Sorocaba',
       album: 'Hinos-Taboado-Sorocaba',
@@ -31,7 +31,7 @@ export async function getSongs() {
     },
     {
       type: 'url',
-      id: 'https://drive.google.com/uc?export=download&id=1FW3WRK_f3vl5lQtrjveCOGz1obwPMN70',
+      id: 'https://bookhccb.pages.dev/arquivos/4.mp3',
       title: 'Cilene Benichio Jonas Benihio Vol.02',
       artist: 'Jonas-Benichio',
       album: 'Benichio-vol1',
