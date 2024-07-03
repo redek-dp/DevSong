@@ -24,49 +24,14 @@ export async function getSongs() {
 
     // The songs array doesn't even exist, so this is the first time we're running.
     // Add a couple of songs to get started so the app isn't empty.
+
     songs = [{
       type: 'url',
       id: 'https://cloud1.cdnseguro.com:2136/,.mp3',
-      title: 'Radio DecomStudio',
+      title: 'RADIO DECOM STUDIO',
       artist: 'DevSong',
-      album: 'Decom tv',
-      duration: '4:15',
-      dateAdded: Date.now()
-    },
-    {
-      type: 'url',
-      id: 'https://bookhccb.pages.dev/arquivos/2.mp3',
-      title: 'Coletânea 1 de Hinos Taboado e Sorocaba',
-      artist: 'DevSong Taboado e Sorocaba',
-      album: 'Hinos-Taboado-Sorocaba',
-      duration: '50:40',
-      dateAdded: Date.now()
-    },
-    {
-      type: 'url',
-      id: 'https://drive.google.com/uc?export=download&id=1FW3WRK_f3vl5lQtrjveCOGz1obwPMN70',
-      title: 'Cilene Benichio Jonas Benihio Vol.02',
-      artist: 'DevSong Jonas-Benichio',
-      album: 'Benichio-vol1',
-      duration: '60:34',
-      dateAdded: Date.now()
-    },
-    {
-      type: 'url',
-      id: 'https://drive.google.com/uc?export=download&id=12qkgpqcXBvRQE2NV8yqSVU2Soix6khCt',
-      title: 'Hinos CCB Voz e Piano',
-      artist: 'DevSong CCB Voz Orquestra Hymns',
-      album: 'OrquestraHymns',
-      duration: '60:34',
-      dateAdded: Date.now()
-    },
-    {
-      type: 'url',
-      id: 'https://drive.google.com/uc?export=download&id=1NISA2h1s0rjTVYS8pvowlI8If5HaCN2F',
-      title: 'Hinos Ccb Orquestra Hymns',
-      artist: 'DevSong',
-      album: 'OrquestraHymns',
-      duration: '70:29',
+      album: 'DECOM TV',
+      duration: '0:00',
       dateAdded: Date.now()
     }];
 
